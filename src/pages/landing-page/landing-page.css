@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+}
+
+.child {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.title-hero {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.logo-position {
+  display: flex;
+  justify-content: center;
+}
+
+.button-area {
+  display: grid;
+  grid-template-columns: repeat(1 minmax(1fr));
+  gap: 1rem 0;
+  margin: 2rem 0;
+}
+
+@media (max-width: 530px) { 
+  .title-hero {
+    font-size: 1.5rem;
+  }
+}
